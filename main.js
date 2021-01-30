@@ -34,21 +34,21 @@ const getWeather = () => {
         $input.value='';
 
         if(status.id>=200 && status.id<=232){
-            $photo.setAttribute('src', 'WeatherApp grafiki/thunderstorm.png')
+            $photo.setAttribute('src', 'thunderstorm.png')
         } else if(status.id>=300 && status.id<=321){
-            $photo.setAttribute('src', 'WeatherApp grafiki/drizzle.png')
+            $photo.setAttribute('src', 'drizzle.png')
         } else if(status.id>=500 && status.id<=531){
-            $photo.setAttribute('src', 'WeatherApp grafiki/rain.png')
+            $photo.setAttribute('src', 'rain.png')
         } else if(status.id>=600 && status.id<=622){
-            $photo.setAttribute('src', 'WeatherApp grafiki/ice.png')
+            $photo.setAttribute('src', 'ice.png')
         }else if(status.id>=701 && status.id<=781){
-            $photo.setAttribute('src', 'WeatherApp grafiki/fog.png')
+            $photo.setAttribute('src', 'fog.png')
         }else if(status.id===800){
-            $photo.setAttribute('src', 'WeatherApp grafiki/sun.png')
+            $photo.setAttribute('src', 'sun.png')
         } else if(status.id>=801 && status.id<=804){ 
-            $photo.setAttribute('src', 'WeatherApp grafiki/cloud.png')
+            $photo.setAttribute('src', 'cloud.png')
         } else{
-            $photo.setAttribute('src', 'WeatherApp grafiki/unknown.png')
+            $photo.setAttribute('src', 'unknown.png')
         }
 })
 .catch(() => {$warning.textContent = 'Wpisz poprawna nazwę miasta!'})
